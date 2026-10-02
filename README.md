@@ -8,6 +8,16 @@ The business questions are straightforward: which products generate the most rev
 
 ![July sales overview](reports/screenshots/overview.png)
 
+## Business context
+
+Choice is a restaurant ordering and management platform. This portfolio project uses daily CSV sales reports exported from Choice for July 2026.
+
+The available exports required additional preparation to support a monthly product analysis. Sales were spread across daily files, ingredient costs were maintained separately, and equivalent products sometimes appeared under different names. The exports used in this project also lacked a sales-channel identifier and contained ambiguous portion-size modifiers.
+
+The project combines these reports, links sales to a reviewed cost reference, and presents the results in Power BI. It enables exploration of daily sales, product rankings, and estimated profitability within the limitations of the available data.
+
+Sales channels are not inferred from prices: price differences alone cannot reliably distinguish website and marketplace orders. The limitations described here concern the exports used in this project, rather than all capabilities of the Choice platform.
+
 ## Results at a glance
 
 The cleaned dataset covers **31 days**, **802 sales rows**, and **134 unified product names**. Rows represent exported product sales entries, not individual customer orders. Quantities count menu items sold, not individual sushi pieces.
